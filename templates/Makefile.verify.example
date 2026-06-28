@@ -1,0 +1,42 @@
+# ==============================================================================
+# Makefile.verify.example: Canonical verification contract for AI Coding Agents
+# Copy or adapt this into your project root as `Makefile`
+# ==============================================================================
+
+.PHONY: verify test lint typecheck format-check build
+
+# Default verify target executed by all agents and CI
+verify: format-check lint typecheck test build
+	@echo "All local verification checks passed successfully!"
+
+# 1. Formatting check
+format-check:
+	@echo "Checking formatting..."
+	# e.g.: pnpm prettier --check .
+	# e.g.: ruff format --check .
+
+# 2. Linter check
+lint:
+	@echo "Running linter..."
+	# e.g.: pnpm eslint .
+	# e.g.: ruff check .
+	# e.g.: golangci-lint run
+
+# 3. Static type analysis
+typecheck:
+	@echo "Running type checking..."
+	# e.g.: pnpm tsc --noEmit
+	# e.g.: mypy .
+
+# 4. Automated tests
+test:
+	@echo "Running test suite..."
+	# e.g.: pnpm test:affected
+	# e.g.: pytest -v
+	# e.g.: go test -v -race ./...
+
+# 5. Build artifact check
+build:
+	@echo "Verifying production build..."
+	# e.g.: pnpm build
+	# e.g.: go build ./...
