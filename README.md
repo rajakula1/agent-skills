@@ -60,7 +60,7 @@ Add [`scripts/sync-skills.sh`](./scripts/sync-skills.sh) to your project tooling
 
 ```bash
 # In downstream project root:
-curl -sSL https://raw.githubusercontent.com/your-org/agent-skills/main/scripts/sync-skills.sh | bash
+curl -sSL https://raw.githubusercontent.com/rajakula1/agent-skills/main/scripts/sync-skills.sh | bash
 ```
 
 This:
@@ -71,7 +71,7 @@ This:
 #### Option B: Git Submodule
 If you prefer strict Git version-pinning across your organization:
 ```bash
-git submodule add https://github.com/your-org/agent-skills.git .skills
+git submodule add https://github.com/rajakula1/agent-skills.git .skills
 ```
 
 ---

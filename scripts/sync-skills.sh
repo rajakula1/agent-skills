@@ -5,7 +5,7 @@
 set -euo pipefail
 
 # Configuration
-SOURCE_REPO_DEFAULT="https://github.com/your-org/agent-skills.git"
+SOURCE_REPO_DEFAULT="https://github.com/rajakula1/agent-skills.git"
 TARGET_DIR="${1:-.skills}"
 TEMP_CLONE_DIR=$(mktemp -d /tmp/agent-skills-sync.XXXXXX)
 
